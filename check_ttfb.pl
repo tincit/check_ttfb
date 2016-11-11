@@ -2,7 +2,7 @@
 
 # 10.11.2016, Daniel Bienert / dbienert@tincit.de / https://blog.tincit.de
 # check_ttfb.pl: Get website time to first byte using libCURL API interface
-# v0.1.0
+# v1.0.0
 
 use FileHandle;
 use WWW::Curl::Easy;
@@ -10,7 +10,7 @@ use WWW::Curl::Easy;
 if($ARGV[0] eq '--help' || $ARGV[0] eq '-h'){
 	print ("\n\n10.11.2016, Daniel Bienert / dbienert\@tincit.de / https://blog.tincit.de\n");
 	print ("check_ttfb.pl: Get website time to first byte using libCURL API interface\n");
-	print ("v0.1.0\n\n");
+	print ("v1.0.0\n\n");
 
 	print "Usage:\n";
 	print "check_ttfb.pl <URL> <TTFB_WARN> <TTFB_CRIT>\n\n";
