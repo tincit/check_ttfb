@@ -16,7 +16,7 @@ Nagios/Icinga Plugin to get website time to first byte (TTFB) using libCURL API 
 
 # Usage
 
-    check_ttfb.pl \<URL\> \<TTFB_WARN\> \<TTFB_CRIT\>
+    check_ttfb.pl <URL> <TTFB_WARN> <TTFB_CRIT>
 
 URL: HTTP/HTTPS website to perform the check on
 
