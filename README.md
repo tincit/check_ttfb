@@ -27,6 +27,12 @@ TTFB_CRIT: Issue a CRITICAL result after the server need this time to sent the f
 
 # Example
 
-    check_ttfb.pl http://example.com 1.2 4
+    check_ttfb.pl http://example.com 1.2 4.1
 
 This check will issue WARNING if the ttfb is longer than 1.2 seconds and issue CRITICAL if it's longer than 4 seconds.
+
+# pnp4nagios screenshot
+
+this is the output if you use the perfdata of nagios in tools like pnp4nagios
+
+![pnp4nagios screenshot](Screenshot_pnpnagios.png?raw=true "pnp4nagios Screenshot")
