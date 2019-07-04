@@ -33,6 +33,11 @@ This check will issue WARNING if the ttfb is longer than 1.2 seconds and issue C
 
 # pnp4nagios screenshot
 
-this is the output if you use the perfdata of nagios in tools like pnp4nagios
+Assuming this command
+
+    check_ttfb.pl http://example.com 0.6 1.5
+
+creates this as output if you use the given nagios-perfdata in tools like pnp4nagios
+
 
 ![pnp4nagios screenshot](Screenshot_pnpnagios.png?raw=true "pnp4nagios Screenshot")
