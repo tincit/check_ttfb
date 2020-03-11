@@ -50,11 +50,11 @@ my $retCode = $curl->perform;
 if ($retCode == 0) {
 	my $ttfb = $curl->getinfo(CURLINFO_STARTTRANSFER_TIME);
 	if($ttfb >= $ttfbCrit){
-		resultCRIT("TTFB: $ttfb");
+		resultCRIT("TTFB: $ttfb;|TTFB=$ttfb;$ttfbWarn;$ttfbCrit\n");
 	} elsif ($ttfb >= $ttfbWarn){
-		resultWARN("TTFB: $ttfb");
+		resultWARN("TTFB: $ttfb|TTFB=$ttfb;$ttfbWarn;$ttfbCrit\n");
 	} else{
-		resultOK("TTFB: $ttfb");
+		resultOK("TTFB: $ttfb|TTFB=$ttfb;$ttfbWarn;$ttfbCrit\n");
 	}
 } else {
 	resultUNKNOWN($curl->strerror($retCode) . " [Code $retCode]");
